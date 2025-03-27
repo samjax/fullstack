@@ -1,0 +1,26 @@
+<h3>{{ title }}</h3>
+<div class="col-md-6 offset-md-3">
+<form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+        <label for="">firstName</label>
+        <input type="text" class="form-control" id="firstName"
+            [(ngModel)] = "employee.firstName" name="FirstName">
+    </div>
+    <div>
+        <label for="">lastName</label>
+        <input type="text" class="form-control" id="lastName"
+            [(ngModel)] = "employee.lastName" name="LastName">
+    </div>
+    <div>
+        <label for="">Email ID</label>
+        <input type="text" class="form-control" id="emailId"
+            [(ngModel)] = "employee.emailId" name="Email Id">
+    </div>
+    <button class="btn btn-success" type="submit">Submit</button>
+
+</form>
+
+<!-- <form (ngSubmit) = "callMeSally()">
+    <button class="btn" type="submit">Just testing Submit</button>
+</form> -->
+</div>
