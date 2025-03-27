@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
   styleUrl: './create-employee.component.css'
 })
 export class CreateEmployeeComponent implements OnInit{
-  title = 'Add Employee!'
+  title = 'Add Employee'
   employee: Employee = new Employee();
   // Inject employee service in to create-employee component
   constructor(private employeeservice: EmployeeService, private router: Router) { }
