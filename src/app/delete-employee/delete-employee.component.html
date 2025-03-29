@@ -1,0 +1,22 @@
+<div class="col-md-6 offset-md-3">
+    <h3>{{ title }}</h3>
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label for="">firstName</label>
+            <input type="text" class="form-control" id="firstName" 
+            [(ngModel)] = "employee.firstName" name="FirstName" readonly>
+        </div>
+        <div>
+            <label for="">lastName</label>
+            <input type="text" class="form-control" id="lastName"
+            [(ngModel)] = "employee.lastName" name="LastName" readonly>
+        </div>
+        <div>
+            <label for="">Email ID</label>
+            <input type="text" class="form-control" id="emailId"
+            [(ngModel)] = "employee.emailId" name="Email Id" readonly>
+        </div>
+        <p>Are you sure you want to delete the employee? Thing again mate!</p>
+        <button class="btn btn-danger" type="submit">Delete</button>
+        <button class="btn btn-info" type="submit">Cancel</button>
+    </form>
